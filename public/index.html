@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Liars Dice Calculator</title>
+</head>
+
+<body>
+    <h1>Liar's Dice Calculator</h1>
+    Number of Your Bet:<br>
+    <input type="number" id="bet" min="1" max="20" step="1"><br>
+    Number of Dice Being Rolled:<br>
+    <input type="number" id="count" min="1" max="20" step="1"><br>
+    Check the Box if 1's are Wild
+    <input type="checkbox" class="ones" value="Yes"><br>
+    <input type="submit" onclick="GetTheNums()">
+    <script src="index.js"></script>
+    <h2 id="res"></h2>
+</body>
+
+</html>
