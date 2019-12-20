@@ -5,20 +5,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css">
     <title>Liars Dice Calculator</title>
 </head>
 
 <body>
     <h1>Liar's Dice Calculator</h1>
-    Number of Your Bet:<br>
-    <input type="number" id="bet" min="1" max="20" step="1"><br>
+    <p>Meant for use with the game "Liar's Dice", which uses six-sided </p>
+    Your Bet:<br>
+    <input class="input" type="number" id="bet" min="1" step="1"><br>
     Number of Dice Being Rolled:<br>
-    <input type="number" id="count" min="1" max="20" step="1"><br>
+    <input class="input" type="number" id="count" min="1" step="1"><br>
     Check the Box if 1's are Wild
     <input type="checkbox" class="ones" value="Yes"><br>
-    <input type="submit" onclick="GetTheNums()">
+    <input type="submit" id ="button"" onclick="GetTheNums()">
     <script src="index.js"></script>
     <h2 id="res"></h2>
+    <footer class="site-footer">Created by William Pinon</footer>
 </body>
 
 </html>

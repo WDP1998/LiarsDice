@@ -1,0 +1,48 @@
+body {
+    background-color: whitesmoke;
+    color: rgb(37, 133, 133);
+    font-size: 2em;
+    text-align: center;
+}
+h1 {
+    color: rgb(37, 133, 133);
+    text-align: center;
+}
+.input {
+    padding: 12px 20px;
+    margin: 8px 8px;
+    box-sizing: border-box;
+    border: 2px solid rgb(37, 133, 133);
+    border-radius: 4px;
+    background-color: whitesmoke;
+    color:rgb(37, 133, 133);
+    font-size: 2em;
+    text-align: center;
+}
+#res{
+    background-color: lightgrey;
+}
+
+#button{
+    background-color: whitesmoke;
+    color: rgb(37, 133, 133);
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid rgb(37, 133, 133);
+    margin:8px;
+}
+.page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -142px;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.site-footer,
+.page-wrap:after {
+    height: 142px;
+}

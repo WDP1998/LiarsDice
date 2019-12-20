@@ -18,7 +18,7 @@ async function GetTheNums(){
         const response = await fetch('/api', options);
         const resdata = await response.json();
         let res = document.getElementById('res');
-        res.innerText = "Odds = " + resdata + "%"
+        res.innerHTML = "Odds of "+bet+ " out of "+count+" dice having the same value is<br>" + resdata + "%"
         
 
     } catch (error) {

@@ -16,6 +16,9 @@ function Fact(n) {
 };
 
 function CalcProb(x, n){//Ones are not wild
+    if( x > n){
+        return 0;
+    }
     let C = (Fact(n)/(Fact(n-x) * Fact(x))) * Math.pow(1.0/6.0,x) * Math.pow(5.0/6.0,n-x);
     while(x < n){
         x++;
@@ -26,12 +29,15 @@ function CalcProb(x, n){//Ones are not wild
 };
 
 function CalcProb2(x, n) {//ones are wild
+    if (x > n) {
+        return 0;
+    }
     let C = (Fact(n) / (Fact(n - x) * Fact(x))) * Math.pow(2.0 / 6.0, x) * Math.pow(4.0 / 6.0, n - x);
-    console.log(x, C);
+    //console.log(x, C);
     while (x < n) {
         x++;
         var p = (Fact(n) / (Fact(n - x) * Fact(x))) * Math.pow(2.0 / 6.0, x) * Math.pow(4.0 / 6.0, n - x);
-        console.log(x, p);
+      //  console.log(x, p);
         C += p;
     }
     return C*100;
