@@ -1,34 +1,45 @@
 body {
     background-color: whitesmoke;
-    color: rgb(37, 133, 133);
+
+    background: #16222A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #3A6073, #16222A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3A6073, #16222A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+    color: rgb(26, 210, 223);
     font-size: 2em;
     text-align: center;
 }
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 h1 {
-    color: rgb(37, 133, 133);
+    color: rgb(26, 210, 223);
     text-align: center;
 }
 .input {
     padding: 12px 20px;
     margin: 8px 8px;
     box-sizing: border-box;
-    border: 2px solid rgb(37, 133, 133);
+    border: 2px solid rgb(26, 210, 223);
     border-radius: 4px;
     background-color: whitesmoke;
-    color:rgb(37, 133, 133);
+    color:rgb(26, 210, 223);
     font-size: 2em;
     text-align: center;
 }
 #res{
-    background-color: lightgrey;
+    background-color: rgb(71, 71, 71);
 }
 
 #button{
     background-color: whitesmoke;
-    color: rgb(37, 133, 133);
+    color: rgb(26, 210, 223);
     font-size: 20px;
     padding: 10px 20px;
-    border: 2px solid rgb(37, 133, 133);
+    border: 2px solid rgb(26, 210, 223);
     margin:8px;
 }
 .page-wrap {
